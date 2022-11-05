@@ -1,0 +1,31 @@
+.exp-top img{
+ width:auto;
+ height:320px;
+ position: relative;
+ display: flex;
+ margin-top:20px;
+
+}
+.exp-top{
+  height:40vh;
+}
+.exp-bottom{
+  height:60vh;
+}
+.exp-bottom h1{
+  color:white;
+  text-align: center;
+}
+.exp-bottom ul{
+  color:rgb(221, 221, 221);
+}
+.exp-bottom ul li{
+  margin-top:5px;
+  font-size:20px;
+  text-align:left;
+}
+.exp-bottom h2{
+  font-size:28px;
+  margin-top:5px;
+  text-align:left;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
+.sign-in
+{
+  color:black;
+  background-color:rgb(231, 235, 228) !important;
+  font-size:11px!important;
+  font-family: 'Mingzat', sans-serif !important;
+  font-weight: 1000 !important;
+  margin-top:4px !important;
+}
+.sign-in:hover{
+  background-color:rgb(255, 0, 0) !important;
+  color:rgb(255, 255, 255) !important;
+}
+
+  @media only screen and (min-width: 500px)  {
+    .sign-in{
+      margin-top:8px;
+      margin-left:-3px !important;
+    }
+    
+  }
+
+  .navbar{
+    background-color: black !important;
+    margin:0;
+    padding:0;
+  }
+  #brand{
+    color: white !important;
+    font-family: 'Bebas Neue', cursive;
+    font-size:30px;
+  }
+  #A{
+    color:red;
+  }
+  .nav-link{
+    font-family: 'Bebas Neue', cursive;
+    color: rgba(253, 254, 255, 0.897) !important;
+    font-size:17px;
+  }
+.nav-link:hover{
+  color: rgb(255, 0, 0) !important;
+  
+}

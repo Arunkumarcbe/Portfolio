@@ -1,0 +1,152 @@
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.h-container {
+  width: auto;
+  margin-left: 100px;
+}
+
+.h-container h1 {
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+  height: 60px;
+  font-weight: 50;
+  color:white;
+  margin-bottom:30px;
+}
+
+.h-container p {
+  padding-top: 19px;
+  font-size: 30px;
+  font-weight: lighter;
+  color: rgb(216,204,202);
+}
+
+.h-container button {
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: center;
+  background-color:red ;
+  height: 50px;
+  width: 180px;
+  color: white;
+  font-size: 20px;
+}
+
+.h-container button:hover {
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+@media only screen and (max-width: 650px) {
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .h-container {
+    margin-left: 0px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #121619;
+    color: white;
+  }
+
+  .h-container h1 {
+    font-size: 40px;
+    height: 30px;
+    color: white;
+  }
+
+  .h-container p {
+    font-size: 30px;
+    color: white;
+  }
+
+  .h-container button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+
+  .h-container button:hover {
+    background-color: rgb(225, 225, 225);
+    color: #121619;
+  }
+}
+
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: rgb(214, 214, 214);
+  font-size: 30px;
+  margin-left:3px;
+  margin-top:17px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: -20px;
+  height: 90px;
+  line-height: 90px;
+  margin-top:-5px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: red;
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin-top:28px;
+  background: #000000;
+  border-left: 2px solid white;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
